@@ -1,0 +1,20 @@
+
+
+Extends Content
+
+Type which defines the properties of a liquid. Like Item this will go into it's own subdirectory content/liquids/liquid-name.json, and from it's stem name you can reuse it from your other mod content.
+field 	type 	default 	notes
+color 	Color 	  	[required] color of liquid
+barColor 	Color 	  	[optional] color used in bars.
+lightColor 	Color 	  	Color used to draw lights. Note that the alpha channel is used to dictate brightness.
+flammability 	float 	  	0 to 1; 0 is completely inflammable, above that may catch fire when exposed to heat.
+temperature 	float 	0.5 	0.5 is 'room' temperature, 0 is very cold, 1 is molten hot
+heatCapacity 	float 	0.5 	used in cooling; water is 0.4, cryofluid is 0.9.
+viscosity 	float 	0.5 	how thick this liquid is; water is 0.5, oil is 0.7.
+explosiveness 	float 	  	explosiveness when heated; 0 is nothing, 1 is nuke
+effect 	StatusEffect 	none 	the associated status effect.
+
+Sprites:
+
+    <name>, the sprite used when displaying the liquid from a menu.
+

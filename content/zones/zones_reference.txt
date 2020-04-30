@@ -1,0 +1,57 @@
+
+
+Extends Content
+
+A Zone is a type that takes a map (named the same as the json's filename) and puts it into campaign. (a zone isn't a map)
+
+Every Zone has a Generator, which once initialized, MapGenerator will run through the map and do initialization related stuff. One of those notable things, is deleting all cores on in your map and placing a loadout on top of a random one of them. This allows your campaign map to have multiple core locations. (it doesn't matter which core was previously on the map, loadout will dictate that)
+
+It is entirely possible to produce a custom schematic, but take note that this schematic must contain a CoreBlock within it.
+field 	type 	default 	notes
+baseLaunchCost 	[ ItemStack ] 	  	 
+launchCost 	[ ItemStack ] 	  	 
+startingItems 	[ ItemStack ] 	  	Items you start with on the map.
+conditionWave 	int 	MAXVALUE 	 
+alwaysUnlocked 	boolean 	false 	Whether this map is always unlocked
+launchPeriod 	int 	10 	Rate of waves at which the core may be launched.
+loadout 	Schematic 	basicShard 	Core layout placed by MapGenerators.
+resources 	[ String ] 	  	Array of item names.
+requirements 	[ Objective ] 	  	An array of requirements to unlock configuration.
+configureObjective 	Objective 	ZoneWave 15 	 
+defaultStartingItems 	[ ItemStack ] 	  	 
+
+Sprites:
+
+    zone-<name> preview
+    <name>-zone preview
+
+Built-in loadouts:
+
+    basicShard
+    bXNjaAB4nD2K2wqAIBiD5ymibnoRn6YnEP1BwUMoBL19FuJ2sbFvUFgYZDaJsLeQrkinN9UJHImsNzlYE7WrIUastuSbnlKx2VJJt+8IQGGKdfO/8J5yrGJSMegLg+YUIA==
+    https://simonwoodburyforget.github.io/mindustry-modding/images/basicShard.png
+
+    advancedShard
+    bXNjaAB4nD2LjQqAIAyET7OMIOhFfJqeYMxBgSkYCL199gu33fFtB4tOwUTaBCP5QpHFzwtl32DahBeKK1NwPq8hoOcUixwpY+CUxe3XIwBbB/pa6tadVCUP02hgHvp5vZq/0b7pBHPYFOQ=
+    https://simonwoodburyforget.github.io/mindustry-modding/images/advancedShard.png
+
+    basicFoundation
+    bXNjaAB4nD1OSQ6DMBBzFhVu8BG+0X8MQyoiJTNSukj8nlCi2Adbtg/GA4OBF8oB00rvyE/9ykafqOIw58A7SWRKy1ZiShhZ5RcOLZhYS1hefQ1gRIeptH9jq/qW2lvc1d2tgWsOfVX/tOwE86AYBA==
+    https://simonwoodburyforget.github.io/mindustry-modding/images/basicFoundation.png
+
+    basicNucleus
+    bXNjaAB4nD2MUQqAIBBEJy0s6qOLdJXuYNtCgikYBd2+LNmdj308hkGHtkId7M4YFns4mk/yfB4a48602eDI+mlNznu0FMPFd0wYKCaewl8F0EOueqM+yKSLVfJrNKWnSw/FZGzEGXFG9sy/px4gEBW1
+    https://simonwoodburyforget.github.io/mindustry-modding/images/basicNucleus.png
+
+Built-in zones:
+
+    nuclearComplexe
+    desolateRift
+    tarFields
+    overgrowth
+    stainedMountains
+    frozenForest
+    saltFlats
+    desertWastes
+    groundZero
+

@@ -1,0 +1,7 @@
+name: Mod Name
+displayName: Mod [red]Name[]
+author: You
+description: Describe your purpose
+version: "x.x"
+minGameVersion: "xxx.x"
+dependencies: [ ]

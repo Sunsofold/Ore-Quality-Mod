@@ -1,0 +1,54 @@
+
+
+Custom sounds can be added through the modding system by dropping them in the sounds/ subdirectory. It doesn't matter where you put them. Two formats are needed:
+
+    .ogg required for Desktop/Android
+    .mp3 required for iOS
+
+Just like any other assets, you reference them by the stem of your filenames, so pewpew.ogg and pewpew.mp3 can be referenced with pewpew from a field of type Sound.
+
+Here's a list of built-in sounds:
+
+    artillery
+    back
+    bang
+    beam
+    bigshot
+    boom
+    break
+    build
+    buttonClick
+    click
+    conveyor
+    corexplode
+    door
+    drill
+    empty
+    explosionbig
+    explosion
+    fire
+    flame2
+    flame
+    laserbig
+    laser
+    machine
+    message
+    missile
+    pew
+    place
+    press
+    release
+    respawning
+    respawn
+    shootBig
+    shoot
+    shootSnap
+    shotgun
+    spark
+    splash
+    spray
+    thruster
+    unlock
+    wave
+    windowHide
+
