@@ -1,7 +1,6 @@
-name: Mod Name
-displayName: Mod [red]Name[]
-author: You
-description: Describe your purpose
-version: "x.x"
+name: OreQualityMod
+displayName: Ore Quality Mod
+author: SunsOfOld
+description: A simple mod that adds qualities of ore so I can learn a bit about modding.
+version: "0.01"
 minGameVersion: "xxx.x"
-dependencies: [ ]
